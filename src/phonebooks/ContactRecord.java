@@ -7,6 +7,7 @@ public class ContactRecord {
         this.name = name;
         this.phone = phone;
     }
+
     @Override
     public String toString() {
         return " " +
