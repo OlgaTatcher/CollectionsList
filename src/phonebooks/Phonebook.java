@@ -5,7 +5,6 @@ import java.util.List;
 
 public class Phonebook {
     private List<ContactRecord> contactInfo;
-
     public Phonebook() {
         contactInfo =new ArrayList<>();
     }
@@ -18,6 +17,7 @@ public class Phonebook {
     public void add(ContactRecord phonebookRecord){
         contactInfo.add(phonebookRecord);
     }
+
     public ContactRecord find(String name){
         for (ContactRecord phonebookRecord: contactInfo) {
             if (phonebookRecord.getName().equals(name)){
@@ -27,7 +27,6 @@ public class Phonebook {
         }
         return null;
     }
-
 
     public List<ContactRecord>  findInfo(String name) {
         List<ContactRecord> contact = new ArrayList<>();

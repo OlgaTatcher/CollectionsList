@@ -17,7 +17,6 @@ public class Main {
         ContactList.add(new ContactRecord("Rachel","+347 9852 741"));
         ContactList.add(new ContactRecord("Rachel","+347 388 700"));
 
-
         System.out.println(ContactList);
 
         ContactRecord foundContact=ContactList.find("Monica");
@@ -38,6 +37,7 @@ public class Main {
         }
 
     }
+
     public static int countOccurance(List<String>words,String target) {
         int count=0;
         for (String word:words) {
@@ -83,4 +83,5 @@ public class Main {
         }
         return result;
     }
+
 }
